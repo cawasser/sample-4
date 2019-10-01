@@ -47,6 +47,7 @@
 
 (defn home-page []
   [:section.section>div.container>div.content
+   [welcome-hero "ClojureLand" "Here we go!" "is-info"]
    [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]])
 
 (def pages
