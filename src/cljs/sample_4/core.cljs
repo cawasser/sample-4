@@ -38,10 +38,16 @@
   [:section.section>div.container>div.content
    [:img {:src "/img/warning_clojure.png"}]])
 
+(defn welcome-hero [name message hero-type]
+  [:section.hero.is-bold {:class hero-type}
+   [:div.hero-body {:style {:padding "1rem 1.5rem"}}
+    [:h1.title name]
+    [:p.subtitle.is-size-7 message]]])
+
+
 (defn home-page []
   [:section.section>div.container>div.content
-   (when-let [docs (:docs @session)]
-     [:div {:dangerouslySetInnerHTML {:__html (md->html docs)}}])])
+   [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]])
 
 (def pages
   {:home #'home-page
