@@ -44,11 +44,11 @@
     [:h1.title name]
     [:p.subtitle.is-size-7 message]]])
 
-
 (defn home-page []
   [:section.section>div.container>div.content
    [welcome-hero "ClojureLand" "Here we go!" "is-info"]
-   [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]])
+   [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
+   [welcome-hero "Jacob Hackenberg" "Welcome to ClojureLand, everyone!" "is-warning"]])
 
 (def pages
   {:home #'home-page
