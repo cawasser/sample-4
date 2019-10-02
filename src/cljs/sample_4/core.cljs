@@ -50,7 +50,9 @@
    [welcome-hero "ClojureLand" "Here we go!" "is-info"]
    [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
    [welcome-hero "Austin Paine" "Lets Git merging!" "is-success"]
-   ])
+   [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]])
+
+
 
 (def pages
   {:home #'home-page
