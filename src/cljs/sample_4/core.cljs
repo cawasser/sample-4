@@ -49,7 +49,12 @@
   [:section.section>div.container>div.content
    [welcome-hero "ClojureLand" "Here we go!" "is-info"]
    [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
+<<<<<<< HEAD
    [welcome-hero "Boris Lam" "Welcome to ClojureLand, everyone!" "is-success"]])
+=======
+   [welcome-hero "Austin Paine" "Lets Git merging!" "is-success"]
+   ])
+>>>>>>> d141e3364a8202adc9ff329e60bf79ba9655a430
 
 (def pages
   {:home #'home-page
