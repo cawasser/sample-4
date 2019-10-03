@@ -48,11 +48,11 @@
   [:section.section>div.container>div.content
    [welcome-hero "ClojureLand" "Here we go!" "is-info"]
    [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
+   [welcome-hero "Boris Lam" "Welcome to ClojureLand, everyone!" "is-success"]
+   [welcome-hero "Austin Paine" "Lets Git merging!" "is-success"]
    [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]
    [welcome-hero "Austin Paine" "Lets Git merging!" "is-success"]
    [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]])
-
-
 
 (def pages
   {:home #'home-page
