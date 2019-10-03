@@ -48,8 +48,8 @@
   [:section.section>div.container>div.content
    [welcome-hero "ClojureLand" "Here we go!" "is-info"]
    [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
-   [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]])
-
+   [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]
+])
 (def pages
   {:home #'home-page
    :about #'about-page})
