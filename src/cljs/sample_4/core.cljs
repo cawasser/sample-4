@@ -44,17 +44,15 @@
     [:h1.title name]
     [:p.subtitle.is-size-7 message]]])
 
-
 (defn home-page []
   [:section.section>div.container>div.content
    [welcome-hero "ClojureLand" "Here we go!" "is-info"]
    [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
-<<<<<<< HEAD
-   [welcome-hero "Boris Lam" "Welcome to ClojureLand, everyone!" "is-success"]])
-=======
+   [welcome-hero "Boris Lam" "Welcome to ClojureLand, everyone!" "is-success"]
    [welcome-hero "Austin Paine" "Lets Git merging!" "is-success"]
-   ])
->>>>>>> d141e3364a8202adc9ff329e60bf79ba9655a430
+   [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]
+   [welcome-hero "Austin Paine" "Lets Git merging!" "is-success"]
+   [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]])
 
 (def pages
   {:home #'home-page
