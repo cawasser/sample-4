@@ -53,7 +53,8 @@
    [welcome-hero "Austin Paine" "Lets Git merging!" "is-success"]
    [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]
    [welcome-hero "Austin Paine" "Lets Git merging!" "is-success"]
-   [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]])
+   [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]
+   [welcome-hero "Behrokh Farzad" "Let's start coding!" "is-warning"]])
 
 (def pages
   {:home #'home-page
