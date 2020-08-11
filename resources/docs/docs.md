@@ -81,9 +81,6 @@ the `env/dev/clj/` source path.
 
 <a class="level-item button" href="https://luminusweb.com/docs/middleware.html">learn more about middleware »</a>
 
-
-
-
 <p class="title is-5">Need some help?</p>
 
 Visit the [official documentation](https://luminusweb.com/docs/guestbook) for examples

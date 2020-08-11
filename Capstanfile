@@ -25,4 +25,3 @@ cmdline: /java.so -jar /sample4/app.jar
 #
 files:
   /sample4/app.jar: ./target/uberjar/sample4.jar
-
