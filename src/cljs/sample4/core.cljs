@@ -39,11 +39,23 @@
   [:section.section>div.container>div.content
    [:img {:src "/img/warning_clojure.png"}]])
 
+(defn welcome-hero [name message hero-type]
+  [:section.hero.is-bold {:class hero-type}
+   [:div.hero-body {:style {:padding "1rem 1.5rem"}}
+    [:h1.title name]
+    [:p.subtitle.is-size-7 message]]])
 
 (defn home-page []
   [:section.section>div.container>div.content
-   (when-let [docs (:docs @session)]
-     [:div {:dangerouslySetInnerHTML {:__html (md->html docs)}}])])
+   [welcome-hero "ClojureLand" "Here we go!" "is-info"]
+   [welcome-hero "George Pierce" "Welcome to ClojureLand, everyone!" "is-warning"]
+   [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
+   [welcome-hero "Boris Lam" "Welcome to ClojureLand, everyone!" "is-success"]
+   [welcome-hero "Austin Paine" "Lets Git merging!" "is-primary"]
+   [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]
+   [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]
+   [welcome-hero "Behrokh Farzad" "Let's start coding!" "is-warning"]
+   [welcome-hero "Chad Armstrong" "Living it up in Clojureland" "is-success"]])
 
 (def pages
   {:home #'home-page
@@ -73,7 +85,7 @@
     (events/listen
       HistoryEventType/NAVIGATE
       (fn [event]
-        (swap! session assoc :page (match-route (.-token event)))))
+        (swap! session assoc :page (match-route (.-token ^js event)))))
     (.setEnabled true)))
 
 ;; -------------------------
