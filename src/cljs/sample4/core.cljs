@@ -51,11 +51,11 @@
    [welcome-hero "George Pierce" "Welcome to ClojureLand, everyone!" "is-warning"]
    [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
    [welcome-hero "Austin Paine" "Lets Git merging!" "is-primary"]
+   [welcome-hero "Chad Armstrong" "Living it up in Clojureland" "is-success"]
    [welcome-hero "Boris Lam" "Welcome to ClojureLand, everyone!" "is-success"]
    [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]
    [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]
-   [welcome-hero "Behrokh Farzad" "Let's start coding!" "is-warning"]
-   [welcome-hero "Chad Armstrong" "Living it up in Clojureland" "is-success"]])
+   [welcome-hero "Behrokh Farzad" "Let's start coding!" "is-warning"]])
 
 (def pages
   {:home #'home-page
