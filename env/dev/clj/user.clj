@@ -1,21 +1,31 @@
 (ns user
+  "Userspace functions you can run by default in your local REPL."
   (:require
-    [sample-4.config :refer [env]]
+   [sample4.config :refer [env]]
+    [clojure.pprint]
     [clojure.spec.alpha :as s]
     [expound.alpha :as expound]
     [mount.core :as mount]
-    [sample-4.figwheel :refer [start-fw stop-fw cljs]]
-    [sample-4.core :refer [start-app]]))
+    [sample4.core :refer [start-app]]))
 
 (alter-var-root #'s/*explain-out* (constantly expound/printer))
 
-(defn start []
-  (mount/start-without #'sample-4.core/repl-server))
+(add-tap (bound-fn* clojure.pprint/pprint))
 
-(defn stop []
-  (mount/stop-except #'sample-4.core/repl-server))
+(defn start
+  "Starts application.
+  You'll usually want to run this on startup."
+  []
+  (mount/start-without #'sample4.core/repl-server))
 
-(defn restart []
+(defn stop
+  "Stops application."
+  []
+  (mount/stop-except #'sample4.core/repl-server))
+
+(defn restart
+  "Restarts application."
+  []
   (stop)
   (start))
 

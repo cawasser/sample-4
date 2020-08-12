@@ -1,1 +1,1 @@
-web: java -cp target/uberjar/sample-4.jar clojure.main -m sample-4.core
+web: java -Dclojure.main.report=stderr -cp target/uberjar/sample4.jar clojure.main -m sample4.core

@@ -9,7 +9,7 @@ base: cloudius/osv-openjdk8
 #
 # The command line passed to OSv to start up the application.
 #
-cmdline: /java.so -jar /sample-4/app.jar
+cmdline: /java.so -jar /sample4/app.jar
 
 #
 # The command to use to build the application.
@@ -24,5 +24,4 @@ cmdline: /java.so -jar /sample-4/app.jar
 # List of files that are included in the generated image.
 #
 files:
-  /sample-4/app.jar: ./target/uberjar/sample-4.jar
-
+  /sample4/app.jar: ./target/uberjar/sample4.jar
