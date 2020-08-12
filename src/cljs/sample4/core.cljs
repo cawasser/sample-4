@@ -47,7 +47,7 @@
 
 (defn home-page []
   [:section.section>div.container>div.content
-   [welcome-hero "ClojureLand" "Here we go!" "is-info"]
+   [welcome-hero "ClojureLand" "Here we go! Add your name to the Black Hammer guest book" "is-info"]
    [welcome-hero "George Pierce" "Welcome to ClojureLand, everyone!" "is-warning"]
    [welcome-hero "Chris Wasser" "Welcome to ClojureLand, everyone!" "is-warning"]
    [welcome-hero "Austin Paine" "Lets Git merging!" "is-primary"]
