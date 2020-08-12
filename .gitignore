@@ -9,6 +9,7 @@ test-config.edn
 /.idea
 /.vscode
 *.class
+*.iml
 /.lein-*
 profiles.clj
 /.env
