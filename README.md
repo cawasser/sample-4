@@ -24,8 +24,8 @@ This will spin up the clientside server hosting the webpage.
 You should now be able to open a browser window to `localhost:3000`
 and see the luminus homepage with various welcome banners.
 
-DO NOT run lein shadow watch app whatsoever, this will re-generate the shadow-cljs.edn
-config file and could have unexpected side-effects.
+**DO NOT run lein shadow watch app whatsoever, this will re-generate the shadow-cljs.edn
+config file and could have unexpected side-effects.**
 
 ## License
 
