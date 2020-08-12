@@ -26,4 +26,4 @@ and see the luminus homepage with various welcome banners.
 
 ## License
 
-Copyright © 2020 Austin Paine
+Copyright © 2020 FIXME
