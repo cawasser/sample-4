@@ -19,7 +19,7 @@
     :class (when (= page (:page @session)) "is-active")}
    title])
 
-(defn navbar [] 
+(defn navbar []
   (r/with-let [expanded? (r/atom false)]
     [:nav.navbar.is-info>div.container
      [:div.navbar-brand
@@ -56,7 +56,8 @@
    [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]
    [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]
    [welcome-hero "Behrokh Farzad" "Let's start coding!" "is-warning"]
-   [welcome-hero "Katie Fillingim" "Come to ClojureLand!" "is-primary"]])
+   [welcome-hero "Katie Fillingim" "Come to ClojureLand!" "is-primary"]
+   [welcome-hero "Kira Farney" "Let's Git succeed!" "is-success"]])
 
 (def pages
   {:home #'home-page
