@@ -55,8 +55,7 @@
    [welcome-hero "Boris Lam" "Welcome to ClojureLand, everyone!" "is-success"]
    [welcome-hero "Jacob Hackenberg" "ClojureLand, where Everyone is Welcome!" "is-success"]
    [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]
-   [welcome-hero "Behrokh Farzad" "Let's start coding!" "is-warning"]
-   [welcome-hero "Katie Fillingim" "Come to ClojureLand!" "is-primary"]])
+   [welcome-hero "Behrokh Farzad" "Let's start coding!" "is-warning"]])
 
 (def pages
   {:home #'home-page

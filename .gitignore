@@ -16,8 +16,3 @@ profiles.clj
 /.shadow-cljs
 /node_modules
 /log
-shadow-cljs.edn.backup
-shadow-cljs.edn
-sample-4.iml
-package.json
-package-lock.json
