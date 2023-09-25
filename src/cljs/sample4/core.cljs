@@ -57,7 +57,8 @@
    [welcome-hero "Neel Dave" "Let's get Git started" "is-light"]
    [welcome-hero "Behrokh Farzad" "Let's start coding!" "is-warning"]
    [welcome-hero "Katie Fillingim" "Come to ClojureLand!" "is-primary"]
-   [welcome-hero "Kira Farney" "Let's Git succeed!" "is-success"]])
+   [welcome-hero "Kira Farney" "Let's Git succeed!" "is-success"]
+   [welcome-hero "Chris Griffith" "(conj heroes {:firstname \"Chris\" :lastname \"Griffith\" :conplectability \"high\"})" "is-danger"]])
 
 (def pages
   {:home #'home-page
